@@ -74,7 +74,7 @@ namespace App1
 		}
 		private void MyButton_Click(object sender, RoutedEventArgs e)
 		{
-			processAsync();
+			processAsync().Wait(3);
 		}
 	}
 }

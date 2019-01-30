@@ -39,7 +39,7 @@ Mat& ScanImageAndReduceRandomAccess(Mat& I, const uchar* const table)
 }
 int main(int argc, char** argv)
 {
-	String imageName("d:\\mia\\IMG_1902.JPG");
+	String imageName("d:\\mia¤¤¤å\\IMG_1902.JPG");
 	if (argc > 1)
 	{
 		imageName = argv[1];
@@ -56,6 +56,7 @@ int main(int argc, char** argv)
 	cout << "Detecting edges in input image" << endl;
 	Mat edges;
 	Canny(image, edges, 10, 100);
+	imshow("Canny", edges);
 	waitKey(0); // Wait for a keystroke in the window
 
 	return 0;

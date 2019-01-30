@@ -21,7 +21,7 @@ void help()
 }
 int main(int argc, char *argv[])
 {
-	String imageName("d:\\mia\\IMG_1902.JPG");
+	String imageName("d:\\mia¤¤¤å\\IMG_1902.JPG");
 	help();
 	if (argc > 1)
 	{
